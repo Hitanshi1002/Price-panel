@@ -1,0 +1,141 @@
+/* pink #ff86c8 */
+/* white #fef9ef */
+/* dark #bb8588 */
+
+body{
+    font-family: "Quicksand", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #6f9ceb;
+    display: flex;
+    justify-content: center; 
+    flex-direction:row;
+    align-items: center;   
+    min-height: 100vh;    
+}
+/* the main table */
+.panel-pricing-table{
+    border:5px solid #fef9ef;
+    border-radius:0.7em;
+    background-color: #fef9ef;
+    width:65%;
+    margin:auto;
+    display:flex;
+    align-items:last baseline;
+    box-shadow:0 0.3em 10px  #232c61;
+}
+/* the div inside the table */
+.pricing-plan{
+    border-right: 1px solid #e9e6e6;
+    width:30%;
+    min-height:80vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    align-items:center;
+    flex-grow:1;
+} 
+.panel-pricing-table div:nth-of-type(3){
+    border-right:0px;
+}
+/* the header inside the div */
+.pricing-header{
+    margin:0;
+    color:#8c8e92;
+    font-size:1.4em;
+    text-align:center;
+    font-weight: 700;
+    font-style:normal;
+}
+/* the ul */
+.pricing-features{
+    padding: 0;
+    margin:0 auto;
+    width:80%;
+
+}
+/* the li */
+.pricing-features li{
+    color:#232c61;
+    width:100%;
+    list-style:none;
+    background-color:#fef9ef;
+    font-size:1em;
+    font-weight:600;
+    border-top: 1px solid #e9e6e6;
+
+    display: flex;
+    justify-content: center;   
+    align-items: center;       
+    text-align: center;
+    min-height:3em;              
+    padding: 0 1em;              
+    box-sizing:border-box;
+}
+.pricing-features li:nth-of-type(2) {
+    border-bottom: 1px solid #e9e6e6;
+}
+/* price in the div */
+.pricing-price{
+    color:#006992;
+    font-size:2.2rem;
+    text-align:center;
+    font-weight:bold;
+    /* border-top: 1px solid #ccc; */
+}
+/* 1 and 3 a tag */
+.pricing-button {
+    border:0.1em solid #306bac;
+    color:#306bac;
+    text-decoration:none;
+    margin-bottom:0.8em;
+    border-radius:0.5em;
+    align-self:center;
+    padding:0.5em 2em;
+    font-size:1.2em;
+}
+/* 2 a tag  */
+.pricing-button-is-featured {
+    color:white;
+    text-decoration:none;
+    margin-bottom:0.8em;
+    border:1px solid #306bac;
+    border-radius:0.5em;
+    align-self:center;
+    padding:0.5em 2em;
+    font-size:1.2em;
+    background-color:#306bac;
+}
+img{
+    width:90%;
+    margin:0 auto;
+}
+@media(max-width:800px) {
+    /* 1 and 3 a tag */
+    .pricing-button {
+      font-size:0.7em;
+    }
+    /* 2 a tag  */
+    .pricing-button-is-featured {
+     font-size:0.7em;
+    }
+    .pricing-features li{
+     font-size:0.8em;
+    }
+    .pricing-header{
+        font-size:1.2em;
+    }
+}
+@media (max-width: 500px) {
+    .panel-pricing-table {
+      flex-direction: column;   /* stack vertically */
+      align-items: center;      /* center the vertical stack */
+    }
+  
+    .pricing-plan {
+      width: 90%;               /* take most of the screen width */
+      margin-bottom: 1rem;      /* space between stacked cards */
+      border-right:0;
+      border-top:1px solid #e9e6e6;
+    }
+}
