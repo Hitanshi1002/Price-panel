@@ -8,4 +8,6 @@ Features
 - Media queries for small screens
 - Stylish buttons and section layout
 
+![Preview](image.png.png)
+
 It is only made for practice. :)
